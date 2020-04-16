@@ -17,7 +17,7 @@ Clone this repo onto your local machine.  Then, run "NPM Install" in the termina
 
 # Application Demo
 
-<img src="Assets\gifs\teamprofilegendemofinal.gif" width="100">
+<img src="Assets\gifs\teamprofilegendemofinal.gif">
 
 
 
