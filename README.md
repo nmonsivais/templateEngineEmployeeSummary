@@ -16,7 +16,7 @@ HTML, ES6, Node.JS, GitHub, Inquirer
 Clone this repo onto your local machine.  Then, run "NPM Install" in the terminal to download the necessary modules.  After installation, open up the terminal and type "node apps.js" to initiate your team creation.  Prompts will appear giving you the option to choose an employees role, their attributes, and unique specifications based on the role.  You may continue to add employees as needed or you can select "Finish Team" to see your information compiled on a "team.html" page.
 
 # Application Demo
-![Team Profile Generator Demo]()
+![Team Profile Generator Demo](Assets\gifs\teamprofilegendemofinal.gif)
 
 
 # Contact
