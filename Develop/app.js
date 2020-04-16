@@ -67,7 +67,45 @@ function teamBuilder() {
 }
 teamBuilder();
 
+function createManager() {
+    inquirer.prompt([
+        {
+            type: "input",
+            message: "Please enter manager's full name.",
+            name: "managerName"
 
+        },
+
+        {
+            type: "input",
+            message: "Please enter manager's email address.",
+            name: "managerEmail"
+
+        },
+
+        {
+            type: "input",
+            message: "Please enter manager's employee ID.",
+            name: "managerId"
+
+        },
+
+        {
+            type: "input",
+            message: "Please enter manager's office number.",
+            name: "managerOffice"
+
+        }
+
+    ]).then(function (response) {
+
+        let newManager = new Manager(response.managerName, response.managerId, response.managerEmail, response.managerOffice);
+
+        team.push(newManager);
+        teamBuilder();
+    })
+
+}
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
