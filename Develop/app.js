@@ -106,6 +106,91 @@ function createManager() {
     })
 
 }
+
+
+
+function createEngineer() {
+    inquirer.prompt([
+        {
+            type: "input",
+            message: "Please enter engineer's full name.",
+            name: "engineerName"
+
+        },
+
+        {
+            type: "input",
+            message: "Please enter engineer's email address.",
+            name: "engineerEmail"
+
+        },
+
+        {
+            type: "input",
+            message: "Please enter engineer's employee ID.",
+            name: "engineerId"
+
+        },
+
+        {
+            type: "input",
+            message: "Please enter engineer's Github UN.",
+            name: "engineerUser"
+
+        }
+
+    ]).then(function (response) {
+
+        let newEngineer = new Engineer(response.engineerName, response.engineerId, response.engineerEmail, response.engineerUser);
+
+        team.push(newEngineer);
+        teamBuilder();
+    })
+
+}
+
+
+function createIntern() {
+    inquirer.prompt([
+        {
+            type: "input",
+            message: "Please enter intern's full name.",
+            name: "internName"
+
+        },
+
+        {
+            type: "input",
+            message: "Please enter intern's email address.",
+            name: "internEmail"
+
+        },
+
+        {
+            type: "input",
+            message: "Please enter intern's employee ID.",
+            name: "internId"
+
+        },
+
+        {
+            type: "input",
+            message: "Please enter intern's school.",
+            name: "internSchool"
+
+        }
+
+    ]).then(function (response) {
+
+        let newIntern = new Intern(response.internName, response.internId, response.internEmail, response.internSchool);
+
+        team.push(newIntern);
+        teamBuilder();
+    })
+
+}
+
+
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
