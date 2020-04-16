@@ -1,6 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![Noe "Tro" Monsivais](https://drive.google.com/open?id=1opPaQMcmF6T7xGDy1U3C__Z-ghjoCWD5)
+<img src="assets\images\noemonsivaisprofilepic.png" width="100">
 
 # Team Profile Generator
 This app will allows new and existing employees to create a team profile by answering a few questions.  The app will then display the information on a website.
